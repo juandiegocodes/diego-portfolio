@@ -19,19 +19,19 @@ body {
 }
 
 h1 {
-  font-size: 8vw;
+  font-size: 10rem;
   font-weight: bold;
   color: white;
   margin: 0;
-  line-height: 7vw;
+  line-height: 10rem;
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: 4rem;
   font-weight: bold;
   color: white;
   margin: 0;
-  line-height: 3vw;
+  line-height: 3.5rem;
   margin-left: 5px;
 }
 
@@ -471,7 +471,7 @@ li a {
 }
 
 .alinks a:hover {
-  background-color: $pink;
+  background-color: $blue;
   transition: all 0.25s;
 }
 
@@ -580,7 +580,7 @@ li a {
 .triangleContact {
   position: absolute;
   width: 0;
-  border-bottom: solid 200px $pink;
+  border-bottom: solid 200px $blue;
   border-right: solid 120px transparent;
   border-left: solid 120px transparent;
   top: -80px;
@@ -610,7 +610,7 @@ form {
 
 input {
   background: none;
-  border: $pink 3px solid;
+  border: $blue 3px solid;
   font-size: 1.5rem;
   margin: 0.5rem;
   padding: 0.25rem;
@@ -620,7 +620,7 @@ textarea {
   background: none;
   border: none;
   font-size: 1.5rem;
-  border: $pink solid 3px;
+  border: $blue solid 3px;
   margin: 0.5rem;
   padding: 0.5rem;
 }
