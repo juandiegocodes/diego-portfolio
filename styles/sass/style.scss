@@ -1,0 +1,842 @@
+@import "setup";
+$purple: #433a8b;
+$pink: #ff6192;
+$blue: #2392ee;
+$notwhite: #f7f7f7;
+$black: #232227;
+$red: #ff6666;
+
+// general
+
+html {
+  background-color: $notwhite;
+}
+
+body {
+  font-size: 75%;
+  color: #222;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 10rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  line-height: 10rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  line-height: 3.5rem;
+  margin-left: 5px;
+}
+
+h3 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+// header
+.wrapper {
+  height: 100%;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1100px;
+}
+
+header {
+  height: 100vh;
+  background-color: $purple;
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+  p {
+    font-size: 1.5rem;
+    color: $pink;
+    margin: 0;
+    margin-left: 6px;
+  }
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+}
+
+.titleContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(270deg);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    margin: none;
+    padding: none;
+    margin: none;
+  }
+}
+
+li a {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.triangle {
+  position: relative;
+  width: 0;
+  left: 11rem;
+  border-bottom: solid 41.6px #ff69f8;
+  border-right: solid 24px transparent;
+  border-left: solid 24px transparent;
+  animation: floating3 2s;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -12px;
+    width: 0;
+    border-bottom: solid 20.8px $purple;
+    border-right: solid 12px transparent;
+    border-left: solid 12px transparent;
+  }
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  border-width: 8px;
+  border-color: $blue;
+  border-style: solid;
+  border-radius: 50%;
+  position: relative;
+  left: -7rem;
+  bottom: 5rem;
+  animation: floating3 5s;
+}
+.cross {
+  background: #ff6666;
+  height: 48px;
+  position: relative;
+  width: 8px;
+  margin: 0 22px;
+  transform: rotate(45deg);
+  top: 7rem;
+  left: 10rem;
+  animation: floating2 2s ease-in-out;
+  &:after {
+    content: "";
+    background: #ff6666;
+    height: 8px;
+    left: -20px;
+    position: absolute;
+    top: 20px;
+    width: 48px;
+  }
+}
+
+.square {
+  height: 40px;
+  width: 40px;
+  border-width: 8px;
+  border-color: #40e2a0;
+  border-style: solid;
+  position: relative;
+  right: 4rem;
+  animation: floating1 2s infinite;
+}
+
+@keyframes floating1 {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(15px, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes floating2 {
+  from {
+    transform: translate(15, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(15, -0px);
+  }
+}
+
+@keyframes floating3 {
+  from {
+    transform: translate(15, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(35, 40px);
+  }
+}
+
+// aboutme
+.aboutMe {
+  background-color: white;
+}
+.test {
+  background-color: $notwhite;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  padding: 6rem 0 12.5rem 0;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $black;
+  align-items: flex-end;
+  position: relative;
+  margin-bottom: 8%;
+  .aboutHeader {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    color: $black;
+  }
+}
+
+.spanAbout {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  justify-content: flex-end;
+  span {
+    font-size: 2.5rem;
+    font-weight: 100;
+  }
+  p {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.circleabout {
+  height: 100px;
+  width: 100px;
+  border-width: 25px;
+  border-color: $purple;
+  border-style: solid;
+  border-radius: 50%;
+  position: relative;
+}
+
+.triangleabout {
+  position: absolute;
+  width: 0;
+  border-bottom: solid 200px $pink;
+  border-right: solid 120px transparent;
+  border-left: solid 120px transparent;
+  top: -80px;
+  transform: rotate(50deg);
+  z-index: -1;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: -99px;
+    width: 0;
+    border-bottom: solid 180px $notwhite;
+    border-right: 100px solid transparent;
+    border-left: solid 100px transparent;
+  }
+}
+
+.aboutFigures {
+  position: absolute;
+  right: 25px;
+}
+
+.aboutMainContainer {
+  display: flex;
+}
+
+.aboutMe figure {
+  width: 40%;
+  position: relative;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 0;
+  border: 3px solid $pink;
+}
+
+.aboutText {
+  width: 60%;
+  padding: 1rem;
+  margin-left: 5%;
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+// my work
+
+.test2 {
+  background-color: white;
+  padding-bottom: 10rem;
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+}
+
+.mywork {
+  background-color: $purple;
+}
+
+.myworkTitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $black;
+  align-items: flex-end;
+  position: relative;
+  margin-bottom: 4%;
+  .myworkHeader {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    color: $black;
+  }
+}
+
+.spanWork {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  justify-content: center;
+  span {
+    font-size: 2.5rem;
+    font-weight: 100;
+  }
+  p {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projects li {
+  border-radius: 15px;
+  display: flex;
+  margin: 5rem 0 12rem;
+  padding: 2rem 0;
+  align-items: center;
+}
+
+.circlework {
+  height: 150px;
+  width: 150px;
+  border-width: 8px;
+  border-color: $pink;
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: -69px;
+  bottom: -167px;
+  z-index: 0;
+}
+
+.squarework {
+  height: 80px;
+  width: 80px;
+  border-width: 8px;
+  border-color: #433a8b;
+  border-style: solid;
+  position: absolute;
+  left: 15px;
+}
+
+.workFigures {
+  position: absolute;
+  right: 25px;
+  bottom: 5rem;
+}
+
+.projects {
+  padding-top: 3rem;
+}
+
+.figureContainer {
+  width: 50%;
+  position: relative;
+}
+
+.projectDescriptionLeft {
+  width: 50%;
+  margin-right: 2%;
+  text-align: left;
+  p {
+    font-size: 1.2rem;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: $purple;
+    text-align: center;
+    width: 40%;
+    border-radius: 15px;
+  }
+}
+
+.projectDescriptionRight {
+  width: 50%;
+  margin-left: 10%;
+  text-align: left;
+  p {
+    font-size: 1.2rem;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: $purple;
+    text-align: center;
+    width: 40%;
+    border-radius: 15px;
+  }
+}
+
+.alinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.alinks a {
+  box-shadow: 2.5px 2.5px #888888;
+}
+
+.alinks a:hover {
+  background-color: $blue;
+  transition: all 0.25s;
+}
+
+.alinks a:active {
+  position: relative;
+  top: 1px;
+}
+
+.mobile {
+  position: absolute;
+  width: 25%;
+  top: 43%;
+  left: 83%;
+}
+
+.mobileLeft {
+  position: absolute;
+  width: 25%;
+  top: 27%;
+  left: 83%;
+}
+
+//
+
+.mySkills {
+  background-color: $notwhite;
+  padding-bottom: 7rem;
+  h2 {
+    color: white;
+    padding: 5% 0;
+    text-align: center;
+  }
+  p {
+    color: white;
+  }
+  span {
+    color: white;
+  }
+}
+
+.test1 {
+  background-color: $purple;
+  padding-bottom: 9rem;
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillsLogo {
+  width: 25%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  figcaption {
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.skillsLogo i {
+  font-size: 7rem;
+  color: white;
+}
+
+.skillsLogo img {
+  width: 112px;
+  height: 112px;
+  object-fit: none;
+}
+
+// contact
+.contactMe {
+  padding: 2rem 0;
+}
+
+.contactTitle {
+  margin-bottom: 10rem;
+}
+
+.formContainer {
+  padding: 3rem;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+.contactFigures {
+  position: absolute;
+  left: 25px;
+}
+
+.triangleContact {
+  position: absolute;
+  width: 0;
+  border-bottom: solid 200px $blue;
+  border-right: solid 120px transparent;
+  border-left: solid 120px transparent;
+  top: -80px;
+  transform: rotate(50deg);
+  z-index: -1;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: -99px;
+    width: 0;
+    border-bottom: solid 180px $notwhite;
+    border-right: 100px solid transparent;
+    border-left: solid 100px transparent;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 2rem;
+  border: $purple 3px solid;
+  margin-right: 5%;
+  // justify-content: center;
+}
+
+input {
+  background: none;
+  border: $blue 3px solid;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  padding: 0.25rem;
+}
+
+textarea {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  border: $blue solid 3px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.social p {
+  padding-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.social h4 {
+  padding-bottom: 0.5rem;
+}
+
+.social {
+  font-size: 1.5rem;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 7%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.social {
+  li {
+    padding-right: 0.5rem;
+    padding-bottom: 2rem;
+    width: 50%;
+    i {
+      font-size: 6rem;
+      padding: 0;
+    }
+    a {
+      padding: 0;
+    }
+  }
+}
+
+button {
+  width: 7rem;
+  text-align: center;
+  margin: 0.5rem auto;
+  font-size: 1.5rem;
+  background: none;
+  border: $purple solid 3px;
+  padding: 0.25rem;
+}
+
+@media (max-width: 1420px) {
+  .aboutFigures {
+    right: 130px;
+  }
+}
+@media (max-width: 1250px) {
+  .aboutFigures {
+    display: none;
+  }
+  .projects .projectDescriptionLeft {
+    width: 100%;
+    order: 2;
+    padding: 0 10rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .figureContainer {
+    margin-bottom: 10%;
+  }
+
+  .projects .projectDescriptionRight {
+    width: 100%;
+    margin: 0;
+    padding: 0 10rem;
+    text-align: center;
+  }
+  .projects .figureContainer {
+    width: 50%;
+  }
+  .projects li {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1000px) {
+  .titleContainer {
+    height: 80%;
+    margin-top: 11%;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 850px) {
+  .aboutMainContainer {
+    flex-wrap: wrap;
+    figure {
+      width: 30rem;
+      margin: 0 auto;
+    }
+    .aboutText {
+      margin-top: 5%;
+      width: 100%;
+    }
+  }
+  .projects .projectDescriptionRight {
+    padding: 0 5rem;
+  }
+  .projects .projectDescriptionLeft {
+    padding: 0 5rem;
+  }
+  .projects .figureContainer {
+    width: 60%;
+  }
+  .skillsLogo i {
+    font-size: 5rem;
+  }
+  .skillsLogo img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .formContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    width: 100%;
+    margin: 0;
+  }
+  .social {
+    padding-top: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  .titleContainer {
+    height: 50%;
+    margin-top: 30%;
+  }
+  .cross {
+    top: 0;
+  }
+  .circle {
+    bottom: 1px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 600px) {
+  .aboutMainContainer {
+    figure {
+      width: 25rem;
+    }
+  }
+  .projects .figureContainer {
+    width: 80%;
+  }
+  .skillsLogo {
+    width: 33.33%;
+  }
+
+  .cross {
+    top: -6rem;
+  }
+
+  .square {
+    position: absolute;
+    right: 13rem;
+    top: 23rem;
+  }
+
+  .titleContainer {
+    height: 44%;
+    margin-top: 50%;
+  }
+  .projects .projectDescriptionRight {
+    padding: 0 0.25rem;
+  }
+  .projects .projectDescriptionLeft {
+    padding: 0 0.25rem;
+  }
+
+  .contactFigures {
+    display: none;
+  }
+
+  .contactTitle {
+    margin-bottom: 3%;
+  }
+}
+/*Even smaller*/
+@media (max-width: 470px) {
+  .skillsLogo i {
+    font-size: 4rem;
+  }
+  .skillsLogo img {
+    height: 64px;
+    width: 64px;
+  }
+
+  .titleContainer {
+    height: 340px;
+  }
+  .cross {
+    display: none;
+  }
+  .circle {
+    display: none;
+  }
+  .square {
+    position: absolute;
+    right: 34rem;
+    top: 14rem;
+  }
+  .frame {
+    display: none;
+  }
+}
