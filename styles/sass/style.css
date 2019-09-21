@@ -254,15 +254,15 @@ a:hover {
   height: 100%;
   margin: 0 auto;
   width: 95%;
-  max-width: 1100px;
+  max-width: 1200px;
 }
 
 header {
   height: 100vh;
   overflow: hidden;
   background-color: #433a8b;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
 
 header p {
@@ -497,8 +497,8 @@ li a {
 
 .test {
   background-color: #f7f7f7;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
   padding: 6rem 0 12.5rem 0;
 }
 
@@ -635,8 +635,8 @@ li a {
 .test2 {
   background-color: white;
   padding-bottom: 10rem;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
 }
 
 .mywork {
@@ -1055,9 +1055,15 @@ button {
   text-align: center;
   margin: 0.5rem auto;
   font-size: 1.5rem;
-  background: none;
-  border: #433a8b solid 3px;
+  background: #433a8b;
   padding: 0.25rem;
+  color: white;
+}
+
+button:hover {
+  background-color: #ff6192;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 @media (max-width: 1420px) {
@@ -1174,7 +1180,7 @@ button {
   .square {
     position: absolute;
     right: 9rem;
-    top: 29rem;
+    top: 40rem;
   }
   .projects .projectDescriptionRight {
     padding: 0 0.25rem;
@@ -1223,6 +1229,9 @@ button {
   .aboutMainContainer figure {
     width: 20rem;
   }
+  button {
+    border-radius: 15px;
+  }
 }
 
 /*Even smaller*/
@@ -1244,7 +1253,7 @@ button {
     top: 12rem;
   }
   .triangle {
-    left: 16rem;
+    left: 20rem;
   }
   .cross {
     display: none;
@@ -1253,13 +1262,25 @@ button {
     width: 19rem;
   }
   .test2 {
-    padding-bottom: 18rem;
+    padding-bottom: 12rem;
   }
   .projectDescriptionLeft a {
     width: 45%;
   }
   .projectDescriptionRight a {
     width: 45%;
+  }
+  .test {
+    padding: 2rem 0rem 12rem 0rem;
+  }
+  .projects li {
+    margin: 2rem 0 5rem 0;
+  }
+  h1 {
+    line-height: 14vh;
+  }
+  h2 {
+    font-size: 6vh;
   }
 }
 

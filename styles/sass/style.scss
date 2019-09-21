@@ -83,14 +83,14 @@ a:hover {
   height: 100%;
   margin: 0 auto;
   width: 95%;
-  max-width: 1100px;
+  max-width: 1200px;
 }
 
 header {
   height: 100vh;
   overflow: hidden;
   background-color: $purple;
-  clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
   p {
     font-size: 1.5rem;
     color: $pink;
@@ -242,7 +242,7 @@ li a {
 }
 .test {
   background-color: $notwhite;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
   padding: 6rem 0 12.5rem 0;
 }
 
@@ -351,7 +351,7 @@ li a {
 .test2 {
   background-color: white;
   padding-bottom: 10rem;
-  clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
 }
 
 .mywork {
@@ -621,6 +621,7 @@ form {
   width: 50%;
   padding: 2rem;
   border: $purple 3px solid;
+
   margin-right: 5%;
   // justify-content: center;
 }
@@ -695,9 +696,14 @@ button {
   text-align: center;
   margin: 0.5rem auto;
   font-size: 1.5rem;
-  background: none;
-  border: $purple solid 3px;
+  background: $purple;
   padding: 0.25rem;
+  color: white;
+}
+
+button:hover {
+  background-color: $pink;
+  transition: all 0.5s;
 }
 
 @media (max-width: 1420px) {
@@ -807,7 +813,7 @@ button {
   .square {
     position: absolute;
     right: 9rem;
-    top: 29rem;
+    top: 40rem;
   }
 
   .projects .projectDescriptionRight {
@@ -863,6 +869,9 @@ button {
   .aboutMainContainer figure {
     width: 20rem;
   }
+  button {
+    border-radius: 15px;
+  }
 }
 /*Even smaller*/
 @media (max-width: 470px) {
@@ -884,7 +893,7 @@ button {
   }
 
   .triangle {
-    left: 16rem;
+    left: 20rem;
   }
 
   .cross {
@@ -894,13 +903,25 @@ button {
     width: 19rem;
   }
   .test2 {
-    padding-bottom: 18rem;
+    padding-bottom: 12rem;
   }
   .projectDescriptionLeft a {
     width: 45%;
   }
   .projectDescriptionRight a {
     width: 45%;
+  }
+  .test {
+    padding: 2rem 0rem 12rem 0rem;
+  }
+  .projects li {
+    margin: 2rem 0 5rem 0;
+  }
+  h1 {
+    line-height: 14vh;
+  }
+  h2 {
+    font-size: 6vh;
   }
 }
 @media (max-width: 355px) {
