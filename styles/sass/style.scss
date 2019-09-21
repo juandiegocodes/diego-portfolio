@@ -39,6 +39,7 @@ h2 {
 h3 {
   font-size: 3rem;
   margin: 0;
+  color: $purple;
 }
 
 h4 {
@@ -255,7 +256,7 @@ li a {
     flex-direction: column;
   }
   h2 {
-    color: $black;
+    color: $purple;
   }
 }
 
@@ -367,7 +368,7 @@ li a {
     flex-direction: column;
   }
   h2 {
-    color: $black;
+    color: $purple;
   }
 }
 
@@ -816,9 +817,36 @@ button {
   .contactFigures {
     display: none;
   }
+  .social {
+    margin: 0;
+  }
+
+  form {
+    margin-top: 5%;
+    padding: 0;
+    border: none;
+  }
+
+  input,
+  textarea {
+    border: $purple 4px solid;
+    border-radius: 5px;
+  }
 
   .contactTitle {
     margin-bottom: 3%;
+  }
+  .formContainer {
+    padding: 0;
+  }
+  .social ul {
+    justify-content: space-around;
+  }
+  .social li {
+    width: 15%;
+  }
+  .social li i {
+    font-size: 4rem;
   }
 }
 /*Even smaller*/

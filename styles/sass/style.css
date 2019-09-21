@@ -210,6 +210,7 @@ h2 {
 h3 {
   font-size: 3rem;
   margin: 0;
+  color: #433a8b;
 }
 
 h4 {
@@ -527,7 +528,7 @@ li a {
 }
 
 .title h2 {
-  color: #232227;
+  color: #433a8b;
 }
 
 .spanAbout {
@@ -668,7 +669,7 @@ li a {
 }
 
 .myworkTitle h2 {
-  color: #232227;
+  color: #433a8b;
 }
 
 .spanWork {
@@ -1182,8 +1183,34 @@ button {
   .contactFigures {
     display: none;
   }
+  .social {
+    margin: 0;
+  }
+  form {
+    margin-top: 5%;
+    padding: 0;
+    border: none;
+  }
+  input,
+  textarea {
+    border: #433a8b 4px solid;
+    border-radius: 5px;
+  }
   .contactTitle {
     margin-bottom: 3%;
+  }
+  .formContainer {
+    padding: 0;
+  }
+  .social ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .social li {
+    width: 15%;
+  }
+  .social li i {
+    font-size: 4rem;
   }
 }
 
