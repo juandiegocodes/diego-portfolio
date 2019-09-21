@@ -74,6 +74,10 @@ a:hover {
   transition: all 1s;
 }
 
+.profilemobile {
+  display: none;
+}
+
 // header
 .wrapper {
   height: 100%;
@@ -92,6 +96,7 @@ header {
     color: $pink;
     margin: 0;
     margin-left: 6px;
+    margin-top: 1%;
   }
 }
 svg {
@@ -118,9 +123,8 @@ nav {
     list-style: none;
     color: white;
     display: flex;
-    margin: none;
-    padding: none;
-    margin: none;
+    margin: 0;
+    padding: 0;
     z-index: 232;
   }
 }
@@ -396,7 +400,7 @@ li a {
 .projects li {
   border-radius: 15px;
   display: flex;
-  margin: 5rem 0 12rem;
+  margin: 5rem 0 8rem 0;
   padding: 2rem 0;
   align-items: center;
 }
@@ -568,7 +572,6 @@ li a {
 .skillsLogo img {
   width: 112px;
   height: 112px;
-  object-fit: none;
 }
 
 // contact
@@ -848,6 +851,18 @@ button {
   .social li i {
     font-size: 4rem;
   }
+
+  .profiledesktop {
+    display: none;
+  }
+
+  .profilemobile {
+    display: block;
+  }
+
+  .aboutMainContainer figure {
+    width: 20rem;
+  }
 }
 /*Even smaller*/
 @media (max-width: 470px) {
@@ -875,11 +890,19 @@ button {
   .cross {
     display: none;
   }
-  .frame {
-    display: none;
+  .aboutMainContainer figure {
+    width: 19rem;
+  }
+  .test2 {
+    padding-bottom: 18rem;
+  }
+  .projectDescriptionLeft a {
+    width: 45%;
+  }
+  .projectDescriptionRight a {
+    width: 45%;
   }
 }
-
 @media (max-width: 355px) {
   .circle {
     display: none;
@@ -888,6 +911,9 @@ button {
     top: 12rem;
   }
   .square {
-    top: 13rem;
+    top: 12rem;
+  }
+  .aboutMainContainer figure {
+    width: 17rem;
   }
 }

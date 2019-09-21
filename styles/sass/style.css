@@ -246,6 +246,10 @@ a:hover {
   transition: all 1s;
 }
 
+.profilemobile {
+  display: none;
+}
+
 .wrapper {
   height: 100%;
   margin: 0 auto;
@@ -266,6 +270,7 @@ header p {
   color: #ff6192;
   margin: 0;
   margin-left: 6px;
+  margin-top: 1%;
 }
 
 svg {
@@ -312,9 +317,8 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: none;
-  padding: none;
-  margin: none;
+  margin: 0;
+  padding: 0;
   z-index: 232;
 }
 
@@ -706,7 +710,7 @@ li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5rem 0 12rem;
+  margin: 5rem 0 8rem 0;
   padding: 2rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -909,8 +913,6 @@ li a {
 .skillsLogo img {
   width: 112px;
   height: 112px;
-  -o-object-fit: none;
-     object-fit: none;
 }
 
 .contactMe {
@@ -1212,6 +1214,15 @@ button {
   .social li i {
     font-size: 4rem;
   }
+  .profiledesktop {
+    display: none;
+  }
+  .profilemobile {
+    display: block;
+  }
+  .aboutMainContainer figure {
+    width: 20rem;
+  }
 }
 
 /*Even smaller*/
@@ -1238,8 +1249,17 @@ button {
   .cross {
     display: none;
   }
-  .frame {
-    display: none;
+  .aboutMainContainer figure {
+    width: 19rem;
+  }
+  .test2 {
+    padding-bottom: 18rem;
+  }
+  .projectDescriptionLeft a {
+    width: 45%;
+  }
+  .projectDescriptionRight a {
+    width: 45%;
   }
 }
 
@@ -1251,7 +1271,10 @@ button {
     top: 12rem;
   }
   .square {
-    top: 13rem;
+    top: 12rem;
+  }
+  .aboutMainContainer figure {
+    width: 17rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

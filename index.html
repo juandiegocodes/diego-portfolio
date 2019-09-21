@@ -63,7 +63,8 @@
             <div class="aboutMainContainer">
               <figure>
                 <div class="frame"></div>
-                <img src="profile.jpg" alt="diego ribeiro profile picture" />
+                <img src="profile.jpg" class ="profiledesktop" alt="diego ribeiro profile picture" />
+                <img src="profilemobile.png" class="profilemobile" alt="diego ribeiro profile picture" />
               </figure>
               <div class="aboutText">
                 <p>
@@ -328,14 +329,15 @@
             </div>
           </div>
           <div class="formContainer">
-            <form action="">
+            <form action="http://www.focuspocus.io/magic/rfdiego91@gmail.com" method="POST">
               <label for="name" class="sr-only">Enter Your Name</label>
-              <input type="text" id="name" class="name" placeholder="Name" />
+              <input type="text" id="name" class="name" placeholder="Name" name="name" required />
               <label for="email" class="sr-only">Enter Your Email</label>
               <input
                 type="email"
                 id="email"
                 class="email"
+                name="email"
                 placeholder="Email"
               />
               <label for="areatext" class="sr-only">Enter your message</label>
@@ -343,7 +345,7 @@
                 name="areatext"
                 id="areatext"
                 cols="20"
-                rows="6"
+                rows="10"
                 placeholder="Message"
               ></textarea>
               <button>Submit</button>
