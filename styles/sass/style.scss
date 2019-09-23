@@ -482,6 +482,7 @@ li a {
 .alinks {
   display: flex;
   justify-content: space-around;
+  margin-top: 5%;
 }
 
 .alinks a {
@@ -510,6 +511,23 @@ li a {
   width: 25%;
   top: 27%;
   left: 83%;
+}
+
+.used {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  li {
+    margin: 0;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    margin: 0.5rem;
+    border: $purple 2px dashed;
+    border-radius: 0;
+    // background-color: $pink;
+    color: black;
+  }
 }
 
 //
@@ -691,6 +709,15 @@ textarea {
   }
 }
 
+.resume {
+  width: 7rem;
+  text-align: center;
+  margin: 0.5rem auto;
+  font-size: 1.5rem;
+  background: $purple;
+  padding: 0.25rem;
+  color: white;
+}
 button {
   width: 7rem;
   text-align: center;
@@ -739,6 +766,9 @@ button:hover {
   .projects li {
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .projects ul {
+    justify-content: center;
   }
 }
 /* Landscape phone to portrait tablet */

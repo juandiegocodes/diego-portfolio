@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>Diego Ribeiro | Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -16,6 +16,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/sass/style.css" />
   </head>
   <body>
@@ -49,11 +52,13 @@
           <div class="wrapper">
             <div class="title">
               <div class="aboutHeader">
-                <div class="spanAbout">
+                <div class="spanAbout" data-aos="zoom-out-down" data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
                   <span>| </span>
                   <p>who am i</p>
                 </div>
-                <h2>HELLO</h2>
+                <h2 data-aos="zoom-out-down" data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">HELLO</h2>
               </div>
               <div class="aboutFigures">
                 <div class="circleabout"></div>
@@ -61,30 +66,51 @@
               </div>
             </div>
             <div class="aboutMainContainer">
-              <figure>
+              <figure
+                data-aos="zoom-in-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000"
+              >
                 <div class="frame"></div>
-                <img src="profile.jpg" class ="profiledesktop" alt="diego ribeiro profile picture" />
-                <img src="profilemobile.png" class="profilemobile" alt="diego ribeiro profile picture" />
+                <img
+                  src="profile.jpg"
+                  class="profiledesktop"
+                  alt="diego ribeiro profile picture"
+                />
+                <img
+                  src="profilemobile.png"
+                  class="profilemobile"
+                  alt="diego ribeiro profile picture"
+                />
               </figure>
-              <div class="aboutText">
+              <div
+                class="aboutText"
+                data-aos="zoom-in-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000"
+              >
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-                  sint a, rem, voluptas quas quibusdam quia voluptates aperiam
-                  sequi repudiandae facilis deleniti blanditiis fuga unde earum
-                  corporis inventore distinctio officia!
+                  Hi There! I’m Diego, a Toronto based front-end developer and
+                  graduate of HackerYou. I combine my knowledge of Project
+                  Management, Engineering and Admin Support background with my
+                  never-ending curiosity to challenge myself and thrive in
+                  unexpected situation, trust me, I have moved countries 3
+                  times.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptates vero dicta, dolorum reprehenderit velit quod. Odit
-                  inventore, officiis id pariatur a recusandae ullam accusantium
-                  facilis, consectetur voluptatem rem cum quae.
+                  I love to use my problem-solving skills to build creative and
+                  responsive Web applications that are unique, creative and fun
+                  while at the same time accessible for all users. I’m
+                  constantly challenging myself to think outside the box and try
+                  to learn something new and bring innovation to all my
+                  projects.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Adipisci modi quod nemo placeat ipsum, doloribus consequuntur
-                  temporibus repudiandae voluptas debitis aspernatur quo,
-                  eveniet possimus delectus nihil quis necessitatibus tenetur?
-                  Neque!
+                  As for my life outside coding, I’m deeply passionate about
+                  traveling and learning about different cultures. I love
+                  spending time with my wiener dog and on those cold winter days
+                  you can count that I’m indoors playing PS4 or watching a
+                  Soccer match(TFC!).
                 </p>
                 <ul></ul>
               </div>
@@ -95,7 +121,8 @@
       <section class="mywork" id="projects">
         <div class="test2">
           <div class="wrapper">
-            <div class="myworkTitle">
+            <div class="myworkTitle" data-aos="zoom-out-down" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
               <div class="myworkHeader">
                 <div class="spanWork">
                   <span>| </span>
@@ -107,7 +134,8 @@
             <div class="projects">
               <ul>
                 <li>
-                  <div class="figureContainer">
+                  <div class="figureContainer" data-aos="fade-right" data-aos="zoom-out-down" data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000">
                     <figure class="desktop">
                       <img src="assets/speed21.png" alt="speed 21 front page" />
                     </figure>
@@ -115,39 +143,54 @@
                       <img src="assets/speed21mobile.png" alt="" />
                     </figure>
                   </div>
-                  <div class="projectDescriptionRight">
+                  <div class="projectDescriptionRight" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000">
                     <h3>SPEED 21</h3>
-                    <h4>React Project</h4>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Debitis adipisci, itaque recusandae laborum cum et
-                      architecto ducimus nesciunt magni distinctio velit
-                      cupiditate repellat eveniet dolorem soluta. Aliquid ab sed
-                      delectus.
+                      Built using React & Firebase, Speed 21 is a Fast Paced Blackjack Game with a little time twist. Try your luck and see if you can reach the
+                      first place of the scoreboard.
                     </p>
+                    <ul class="used">
+                      <li>React</li>
+                      <li>HTML</li>
+                      <li>CSS3</li>
+                      <li>API</li>
+                      <li>JavaScript</li>
+                      <li>Firebase</li>
+                      <li>Responsive Design</li>
+                    </ul>
                     <div class="alinks">
-                      <a href="">View Live</a>
-                      <a href="">GitHub</a>
+                      <a href="https://juandiegocodes.github.io/diego-ribeiro-project-5/" target="_blank">View Live</a>
+                      <a href="https://github.com/juandiegocodes/diego-ribeiro-project-5" target="_blank">GitHub</a>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <div class="projectDescriptionLeft">
+                  <div class="projectDescriptionLeft" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000">
                     <h3>Film Buff</h3>
-                    <h4>React Group Project</h4>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Debitis adipisci, itaque recusandae laborum cum et
-                      architecto ducimus nesciunt magni distinctio velit
-                      cupiditate repellat eveniet dolorem soluta. Aliquid ab sed
-                      delectus.
+                      Made with a group of four, this app will suggest a foreign
+                      Movie based on an English movie inputed by the user. Built
+                      using React, Firebase and the movie database API
                     </p>
+                    <ul class="used">
+                      <li>React</li>
+                      <li>HTML</li>
+                      <li>CSS3</li>
+                      <li>API</li>
+                      <li>JavaScript</li>
+                      <li>Firebase</li>
+                      <li>Responsive Design</li>
+                      <li>Group Programming</li>
+                    </ul>
                     <div class="alinks">
-                      <a href="">View Live</a>
-                      <a href="">GitHub</a>
+                      <a href="https://filmbuff-a0153.firebaseapp.com" target="_blank">View Live</a>
+                      <a href="https://github.com/DiegoNeelKanuJenelle/project-6-film-buff" target="_blank">GitHub</a>
                     </div>
                   </div>
-                  <div class="figureContainer">
+                  <div class="figureContainer" data-aos="fade-left"  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000">
                     <figure class="mobileLeft">
                       <img
                         src="assets/filmbluffmobil.png"
@@ -160,7 +203,8 @@
                   </div>
                 </li>
                 <li>
-                  <div class="figureContainer">
+                  <div class="figureContainer" data-aos="fade-right"  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000">
                     <figure class="desktop">
                       <img
                         src="assets/wordstorm.png"
@@ -171,39 +215,55 @@
                       <img src="assets/wordstormmobile.png" alt="" />
                     </figure>
                   </div>
-                  <div class="projectDescriptionRight">
+                  <div class="projectDescriptionRight" data-aos="fade-left"  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000">
                     <h3>WORD STORM</h3>
-                    <h4>jQuery Project</h4>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Debitis adipisci, itaque recusandae laborum cum et
-                      architecto ducimus nesciunt magni distinctio velit
-                      cupiditate repellat eveniet dolorem soluta. Aliquid ab sed
-                      delectus.
+                      Built using jQuery and Javascript in the third week of
+                      bootcamp, this might be my favorite project so far. A
+                      typing game where the user has to enter the word before it
+                      reaches the bottom of the screen. Remember to look at the
+                      clock and match as many words as possible in two minutes.
                     </p>
+                    <ul class="used">
+                      <li>jQuery</li>
+                      <li>HTML</li>
+                      <li>CSS3</li>
+                      <li>JavaScript</li>
+                      <li>Responsive Design</li>
+                    </ul>
                     <div class="alinks">
-                      <a href="">View Live</a>
-                      <a href="">GitHub</a>
+                      <a href="http://wordstorm.juandiegocodes.com/" target="_blank">View Live</a>
+                      <a href="https://github.com/juandiegocodes/diegoRibeiroProjectThree" target="_blank">GitHub</a>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <div class="projectDescriptionLeft">
+                  <div class="projectDescriptionLeft" data-aos="fade-right"  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000">
                     <h3>GLOBE TROTTER</h3>
-                    <h4>Javascript Project</h4>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Debitis adipisci, itaque recusandae laborum cum et
-                      architecto ducimus nesciunt magni distinctio velit
-                      cupiditate repellat eveniet dolorem soluta. Aliquid ab sed
-                      delectus.
+                      Built using Jquery and Javascript in a pair programming
+                      environment. Globe Trotter will show where your nex trip
+                      its going to take you. Using multiple APIs, It'll show you
+                      usefull facts about your next destination. Also fun if you
+                      want to learn a little bit more about the world.
                     </p>
+                    <ul class="used">
+                      <li>jQuery</li>
+                      <li>HTML</li>
+                      <li>CSS3</li>
+                      <li>API</li>
+                      <li>JavaScript</li>
+                      <li>Responsive Design</li>
+                    </ul>
                     <div class="alinks">
-                      <a href="">View Live</a>
-                      <a href="">GitHub</a>
+                      <a href="https://shan-diego-2019.github.io/shirley-diego-project-4/" target="_blank">View Live</a>
+                      <a href="https://github.com/juandiegocodes/shirley-diego-project-4" target="_blank">GitHub</a>
                     </div>
                   </div>
-                  <div class="figureContainer">
+                  <div class="figureContainer" data-aos="fade-left"  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000">
                     <figure class="desktop">
                       <img
                         src="assets/globetrotter.png"
@@ -216,7 +276,8 @@
                   </div>
                 </li>
                 <li>
-                  <div class="figureContainer">
+                  <div class="figureContainer" data-aos="fade-right"  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000">
                     <figure class="desktop">
                       <img
                         src="assets/hangrytummy.png"
@@ -227,19 +288,22 @@
                       <img src="assets/hangrytummymobile.png" alt="" />
                     </figure>
                   </div>
-                  <div class="projectDescriptionRight">
+                  <div class="projectDescriptionRight" data-aos="fade-left"  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000">
                     <h3>HANGRY TUMMY</h3>
-                    <h4>PSD conversion</h4>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Debitis adipisci, itaque recusandae laborum cum et
-                      architecto ducimus nesciunt magni distinctio velit
-                      cupiditate repellat eveniet dolorem soluta. Aliquid ab sed
-                      delectus.
+                      A responsive Photoshop conversion. Coded using floats and
+                      CSS.
                     </p>
+                    <ul class="used">
+                      <li>HTML</li>
+                      <li>CSS3</li>
+                      <li>Sass</li>
+                      <li>Responsive Design</li>
+                    </ul>
                     <div class="alinks">
-                      <a href="">View Live</a>
-                      <a href="">GitHub</a>
+                      <a href="http://hangrytummy.juandiegocodes.com/" target="_blank">View Live</a>
+                      <a href="https://github.com/juandiegocodes/diego-ribeiro-project-one" target="_blank">GitHub</a>
                     </div>
                   </div>
                 </li>
@@ -329,9 +393,19 @@
             </div>
           </div>
           <div class="formContainer">
-            <form action="http://www.focuspocus.io/magic/rfdiego91@gmail.com" method="POST">
+            <form
+              action="http://www.focuspocus.io/magic/rfdiego91@gmail.com"
+              method="POST"
+            >
               <label for="name" class="sr-only">Enter Your Name</label>
-              <input type="text" id="name" class="name" placeholder="Name" name="name" required />
+              <input
+                type="text"
+                id="name"
+                class="name"
+                placeholder="Name"
+                name="name"
+                required
+              />
               <label for="email" class="sr-only">Enter Your Email</label>
               <input
                 type="email"
@@ -358,7 +432,9 @@
               <h4>Lets Connect</h4>
               <ul>
                 <li>
-                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href="https://twitter.com/juandiegocodes"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
                 </li>
                 <li>
                   <a href=""><i class="fab fa-medium"></i></a>
@@ -367,7 +443,7 @@
                   <a href=""><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li>
-                  <a href=""><i class="fab fa-github"></i></a>
+                  <a href="https://github.com/juandiegocodes"><i class="fab fa-github"></i></a>
                 </li>
               </ul>
             </div>
@@ -375,5 +451,9 @@
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
