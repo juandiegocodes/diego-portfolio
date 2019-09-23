@@ -187,7 +187,7 @@ html {
 body {
   font-size: 75%;
   color: #222;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 h1 {
@@ -203,14 +203,19 @@ h2 {
   font-weight: bold;
   color: white;
   margin: 0;
-  line-height: 3.5rem;
+  line-height: 3.5vh;
   margin-left: 5px;
+}
+
+.firstCoffee {
+  line-height: 10vh;
+  margin-left: 1rem;
 }
 
 h3 {
   font-size: 3rem;
   margin: 0;
-  color: #433a8b;
+  color: #565b66;
 }
 
 h4 {
@@ -241,7 +246,7 @@ a {
 }
 
 a:hover {
-  color: #ff6192;
+  color: #fff200;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -260,16 +265,18 @@ a:hover {
 header {
   height: 100vh;
   overflow: hidden;
-  background-color: #433a8b;
+  background-color: #565b66;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
 
 header p {
   font-size: 1.5rem;
-  color: #ff6192;
+  color: #fff200;
+  font-weight: bold;
+  line-height: 7vh;
   margin: 0;
-  margin-left: 6px;
+  margin-left: 1rem;
   margin-top: 1%;
 }
 
@@ -346,7 +353,7 @@ li a {
   top: 14px;
   left: -12px;
   width: 0;
-  border-bottom: solid 20.8px #433a8b;
+  border-bottom: solid 20.8px #565b66;
   border-right: solid 12px transparent;
   border-left: solid 12px transparent;
 }
@@ -532,7 +539,8 @@ li a {
 }
 
 .title h2 {
-  color: #433a8b;
+  color: #565b66;
+  padding-top: 1rem;
 }
 
 .spanAbout {
@@ -551,6 +559,7 @@ li a {
 .spanAbout span {
   font-size: 2.5rem;
   font-weight: 100;
+  color: #ff69f8;
 }
 
 .spanAbout p {
@@ -562,7 +571,7 @@ li a {
   height: 100px;
   width: 100px;
   border-width: 25px;
-  border-color: #433a8b;
+  border-color: #565b66;
   border-style: solid;
   border-radius: 50%;
   position: relative;
@@ -571,7 +580,7 @@ li a {
 .triangleabout {
   position: absolute;
   width: 0;
-  border-bottom: solid 200px #ff6192;
+  border-bottom: solid 200px #fff200;
   border-right: solid 120px transparent;
   border-left: solid 120px transparent;
   top: -80px;
@@ -614,7 +623,7 @@ li a {
   top: 5%;
   right: 5%;
   z-index: 0;
-  border: 3px solid #ff6192;
+  border: 3px solid #ff69f8;
 }
 
 .aboutText {
@@ -640,7 +649,7 @@ li a {
 }
 
 .mywork {
-  background-color: #433a8b;
+  background-color: #565b66;
 }
 
 .myworkTitle {
@@ -673,7 +682,8 @@ li a {
 }
 
 .myworkTitle h2 {
-  color: #433a8b;
+  color: #565b66;
+  padding-top: 1rem;
 }
 
 .spanWork {
@@ -692,6 +702,7 @@ li a {
 .spanWork span {
   font-size: 2.5rem;
   font-weight: 100;
+  color: #2392ee;
 }
 
 .spanWork p {
@@ -717,35 +728,6 @@ li a {
           align-items: center;
 }
 
-.circlework {
-  height: 150px;
-  width: 150px;
-  border-width: 8px;
-  border-color: #ff6192;
-  border-style: solid;
-  border-radius: 50%;
-  position: absolute;
-  left: -69px;
-  bottom: -167px;
-  z-index: 0;
-}
-
-.squarework {
-  height: 80px;
-  width: 80px;
-  border-width: 8px;
-  border-color: #433a8b;
-  border-style: solid;
-  position: absolute;
-  left: 15px;
-}
-
-.workFigures {
-  position: absolute;
-  right: 25px;
-  bottom: 5rem;
-}
-
 .projects {
   padding-top: 3rem;
 }
@@ -769,7 +751,7 @@ li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  background-color: #433a8b;
+  background-color: #2392ee;
   text-align: center;
   width: 40%;
   border-radius: 15px;
@@ -789,7 +771,7 @@ li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  background-color: #433a8b;
+  background-color: #2392ee;
   text-align: center;
   width: 40%;
   border-radius: 15px;
@@ -810,7 +792,7 @@ li a {
 }
 
 .alinks a:hover {
-  background-color: #ff6192;
+  background-color: #565b66;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
@@ -846,10 +828,10 @@ li a {
 
 .used li {
   margin: 0;
-  font-size: 1.2rem;
-  padding: 0 1rem;
+  font-size: 1rem;
+  padding: 1rem;
   margin: 0.5rem;
-  border: #433a8b 2px dashed;
+  border: #2392ee 2px dashed;
   border-radius: 0;
   color: black;
 }
@@ -870,11 +852,11 @@ li a {
 }
 
 .mySkills span {
-  color: white;
+  color: #40e2a0;
 }
 
 .test1 {
-  background-color: #433a8b;
+  background-color: #565b66;
   padding-bottom: 9rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
@@ -927,17 +909,21 @@ li a {
 }
 
 .skillsLogo i {
-  font-size: 7rem;
-  color: white;
+  font-size: 5rem;
+  color: #40e2a0;
 }
 
 .skillsLogo img {
-  width: 112px;
-  height: 112px;
+  width: 80px;
+  height: 80px;
 }
 
 .contactMe {
   padding: 2rem 0;
+}
+
+.contactMe span {
+  color: #ff6666;
 }
 
 .contactTitle {
@@ -961,7 +947,7 @@ li a {
 .triangleContact {
   position: absolute;
   width: 0;
-  border-bottom: solid 200px #ff6192;
+  border-bottom: solid 200px #fff200;
   border-right: solid 120px transparent;
   border-left: solid 120px transparent;
   top: -80px;
@@ -991,13 +977,13 @@ form {
           flex-direction: column;
   width: 50%;
   padding: 2rem;
-  border: #433a8b 3px solid;
+  border: #565b66 3px solid;
   margin-right: 5%;
 }
 
 input {
   background: none;
-  border: #ff6192 3px solid;
+  border: #ff6666 3px solid;
   font-size: 1.5rem;
   margin: 0.5rem;
   padding: 0.25rem;
@@ -1007,7 +993,7 @@ textarea {
   background: none;
   border: none;
   font-size: 1.5rem;
-  border: #ff6192 solid 3px;
+  border: #ff6666 solid 3px;
   margin: 0.5rem;
   padding: 0.5rem;
 }
@@ -1022,11 +1008,11 @@ textarea {
 }
 
 .social a {
-  color: #433a8b;
+  color: #565b66;
 }
 
 .social a:hover {
-  color: #ff6192;
+  color: #ff6666;
 }
 
 .social {
@@ -1076,7 +1062,7 @@ textarea {
   text-align: center;
   margin: 0.5rem auto;
   font-size: 1.5rem;
-  background: #433a8b;
+  background: #565b66;
   padding: 0.25rem;
   color: white;
 }
@@ -1086,15 +1072,24 @@ button {
   text-align: center;
   margin: 0.5rem auto;
   font-size: 1.5rem;
-  background: #433a8b;
+  background: #565b66;
   padding: 0.25rem;
   color: white;
 }
 
 button:hover {
-  background-color: #ff6192;
+  background-color: #fff200;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+label {
+  position: absolute;
+}
+
+input:focus + label,
+input:valid + label {
+  font-size: 0.5rem;
 }
 
 @media (max-width: 1420px) {
@@ -1237,7 +1232,7 @@ button:hover {
   }
   input,
   textarea {
-    border: #433a8b 4px solid;
+    border: #565b66 4px solid;
     border-radius: 5px;
   }
   .contactTitle {
