@@ -637,7 +637,8 @@ li a {
 }
 
 .aboutText p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 
 .aboutMainContainer img {
@@ -785,8 +786,9 @@ li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 5%;
 }
 
@@ -931,7 +933,7 @@ li a {
 }
 
 .contactTitle {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .formContainer {
@@ -946,29 +948,6 @@ li a {
 .contactFigures {
   position: absolute;
   left: 25px;
-}
-
-.triangleContact {
-  position: absolute;
-  width: 0;
-  border-bottom: solid 200px #fff200;
-  border-right: solid 120px transparent;
-  border-left: solid 120px transparent;
-  top: -80px;
-  -webkit-transform: rotate(50deg);
-          transform: rotate(50deg);
-  z-index: -1;
-}
-
-.triangleContact::after {
-  content: "";
-  position: absolute;
-  top: 13px;
-  left: -99px;
-  width: 0;
-  border-bottom: solid 180px #f7f7f7;
-  border-right: 100px solid transparent;
-  border-left: solid 100px transparent;
 }
 
 form {
@@ -1082,7 +1061,7 @@ button {
 }
 
 button:hover {
-  background-color: #fff200;
+  background-color: #ff6666;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }

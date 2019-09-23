@@ -354,7 +354,8 @@ li a {
   padding: 1rem;
   margin-left: 5%;
   p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
 }
 
@@ -469,7 +470,7 @@ li a {
 
 .alinks {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 5%;
 }
 
@@ -589,7 +590,7 @@ li a {
 }
 
 .contactTitle {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .formContainer {
@@ -601,27 +602,6 @@ li a {
 .contactFigures {
   position: absolute;
   left: 25px;
-}
-
-.triangleContact {
-  position: absolute;
-  width: 0;
-  border-bottom: solid 200px $purple;
-  border-right: solid 120px transparent;
-  border-left: solid 120px transparent;
-  top: -80px;
-  transform: rotate(50deg);
-  z-index: -1;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 13px;
-    left: -99px;
-    width: 0;
-    border-bottom: solid 180px $notwhite;
-    border-right: 100px solid transparent;
-    border-left: solid 100px transparent;
-  }
 }
 
 form {
@@ -719,7 +699,7 @@ button {
 }
 
 button:hover {
-  background-color: $purple;
+  background-color: $red;
   transition: all 0.5s;
 }
 
