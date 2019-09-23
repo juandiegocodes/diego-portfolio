@@ -190,6 +190,10 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+main {
+  overflow: hidden;
+}
+
 h1 {
   font-size: 18vh;
   font-weight: bold;
