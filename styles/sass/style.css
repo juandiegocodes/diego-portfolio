@@ -179,6 +179,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+textarea {
+  resize: none;
+}
+
 html {
   background-color: #f7f7f7;
   scroll-behavior: smooth;
@@ -253,6 +257,25 @@ a:hover {
   color: #fff200;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+a:focus {
+  border: #fff200 4px solid;
+}
+
+input:hover,
+textarea:hover {
+  border: #2392ee 4px solid;
+}
+
+input:active,
+textarea:active {
+  border: #2392ee 4px solid;
+}
+
+input:focus,
+textarea:focus {
+  border: #2392ee 4px solid;
 }
 
 .profilemobile {
@@ -984,10 +1007,12 @@ textarea {
 .social p {
   padding-bottom: 0.5rem;
   font-size: 1.25rem;
+  margin: 0;
 }
 
 .social h4 {
   padding-bottom: 0.5rem;
+  padding-top: 1rem;
 }
 
 .social a {
@@ -1066,25 +1091,39 @@ button:hover {
   transition: all 0.5s;
 }
 
-label {
-  position: absolute;
+.downloadDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-input:focus + label,
-input:valid + label {
-  font-size: 0.5rem;
+a.download {
+  margin-top: 1rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #ff69f8;
+  text-align: center;
+  width: 16rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 2.5px 2.5px #888888;
+          box-shadow: 2.5px 2.5px #888888;
+  padding: 0.7rem;
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
-@media (max-width: 1420px) {
-  .aboutFigures {
-    right: 130px;
-  }
+a.download:hover {
+  background-color: #565b66;
+  color: white;
 }
 
 @media (max-width: 1250px) {
-  .aboutFigures {
-    display: none;
-  }
   .projects .projectDescriptionLeft {
     width: 100%;
     -webkit-box-ordinal-group: 3;
@@ -1201,9 +1240,6 @@ input:valid + label {
   }
   .projects .projectDescriptionLeft {
     padding: 0 0.25rem;
-  }
-  .contactFigures {
-    display: none;
   }
   .social {
     margin: 0;

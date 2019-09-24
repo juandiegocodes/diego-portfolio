@@ -10,6 +10,9 @@ $green: #40e2a0;
 
 // general
 
+textarea {
+  resize: none;
+}
 html {
   background-color: $notwhite;
   scroll-behavior: smooth;
@@ -83,6 +86,26 @@ a {
 a:hover {
   color: $purple;
   transition: all 1s;
+}
+
+a:focus {
+  border: $purple 4px solid;
+}
+
+input:hover,
+textarea:hover {
+  border: $blue 4px solid;
+}
+
+input:active,
+textarea:active {
+  border: $blue 4px solid;
+}
+
+input:focus,
+textarea:focus {
+  border: $blue 4px solid;
+  // font-size: 2rem;
 }
 
 .profilemobile {
@@ -634,10 +657,12 @@ textarea {
 .social p {
   padding-bottom: 0.5rem;
   font-size: 1.25rem;
+  margin: 0;
 }
 
 .social h4 {
   padding-bottom: 0.5rem;
+  padding-top: 1rem;
 }
 
 .social a {
@@ -703,24 +728,34 @@ button:hover {
   transition: all 0.5s;
 }
 
-label {
-  position: absolute;
+.downloadDiv {
+  display: flex;
+  justify-content: center;
 }
 
-input:focus + label,
-input:valid + label {
-  font-size: 0.5rem;
+a.download {
+  margin-top: 1rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: $magenta;
+  text-align: center;
+  width: 16rem;
+  border-radius: 15px;
+  box-shadow: 2.5px 2.5px #888888;
+  padding: 0.7rem;
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
-@media (max-width: 1420px) {
-  .aboutFigures {
-    right: 130px;
-  }
+a.download:hover {
+  background-color: $charcoal;
+  color: white;
 }
+
 @media (max-width: 1250px) {
-  .aboutFigures {
-    display: none;
-  }
   .projects .projectDescriptionLeft {
     width: 100%;
     order: 2;
@@ -832,9 +867,6 @@ input:valid + label {
     padding: 0 0.25rem;
   }
 
-  .contactFigures {
-    display: none;
-  }
   .social {
     margin: 0;
   }
