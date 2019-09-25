@@ -43,7 +43,7 @@ h2 {
 
 .firstCoffee {
   line-height: 10vh;
-  margin-left: 1rem;
+  margin-left: 0.7rem;
 }
 
 h3 {
@@ -84,24 +84,27 @@ a:hover {
   transition: all 1s;
 }
 
-a:focus {
-  border: $purple 4px solid;
+header a:focus {
+  border: 1px solid yellow;
 }
+
+// a:focus {
+//   border: 0.5px solid $blue;
+// }
 
 input:hover,
 textarea:hover {
-  border: $blue 4px solid;
+  border: $blue 3px solid;
 }
 
 input:active,
 textarea:active {
-  border: $blue 4px solid;
+  border: $blue 3px solid;
 }
 
 input:focus,
 textarea:focus {
-  border: $blue 4px solid;
-  // font-size: 2rem;
+  border: $blue 3px solid;
 }
 
 .profilemobile {
@@ -127,7 +130,7 @@ header {
     font-weight: bold;
     line-height: 7vh;
     margin: 0;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     margin-top: 1%;
   }
 }
@@ -145,6 +148,19 @@ svg {
   justify-content: center;
   align-items: center;
   transform: rotate(270deg);
+  animation: goingBack 5s forwards;
+}
+
+@keyframes goingBack {
+  from {
+    transform: rotate(270deg);
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 nav {
@@ -207,7 +223,7 @@ li a {
   width: 8px;
   margin: 0 22px;
   transform: rotate(45deg);
-  top: 7rem;
+  top: 0rem;
   left: 10rem;
   animation: floating2 2s ease-in-out;
   &:after {
@@ -453,7 +469,7 @@ li a {
 
 .projectDescriptionLeft {
   width: 50%;
-  margin-right: 2%;
+  margin-right: 5%;
   text-align: left;
   p {
     font-size: 1.2rem;
@@ -471,7 +487,7 @@ li a {
 
 .projectDescriptionRight {
   width: 50%;
-  margin-left: 10%;
+  margin-left: 5%;
   text-align: left;
   p {
     font-size: 1.2rem;
@@ -500,11 +516,6 @@ li a {
 .alinks a:hover {
   background-color: $charcoal;
   transition: all 0.25s;
-}
-
-.alinks a:active {
-  position: relative;
-  top: 1px;
 }
 
 .mobile {
@@ -628,14 +639,14 @@ form {
   flex-direction: column;
   width: 50%;
   padding: 2rem;
-  border: $charcoal 3px solid;
+  border: $red 3px solid;
 
   margin-right: 5%;
 }
 
 input {
   background: none;
-  border: $red 3px solid;
+  border: $charcoal 3px solid;
   font-size: 1.5rem;
   margin: 0.5rem;
   padding: 0.25rem;
@@ -645,9 +656,10 @@ textarea {
   background: none;
   border: none;
   font-size: 1.5rem;
-  border: $red solid 3px;
+  border: $charcoal solid 3px;
   margin: 0.5rem;
   padding: 0.5rem;
+  resize: none;
 }
 
 .social p {
@@ -734,7 +746,7 @@ a.download {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  background-color: $magenta;
+  background-color: #443a8b;
   text-align: center;
   width: 16rem;
   border-radius: 15px;
@@ -834,6 +846,20 @@ a.download:hover {
 }
 /* Landscape phones and down */
 @media (max-width: 600px) {
+  .titleContainer {
+    h1 {
+      font-size: 15vh;
+    }
+    h2 {
+      font-size: 6vh;
+      line-height: 1vh;
+    }
+    .firstCoffee {
+      font-size: 6vh;
+      line-height: 6vh;
+    }
+  }
+
   .aboutMainContainer {
     figure {
       width: 25rem;
@@ -852,8 +878,8 @@ a.download:hover {
 
   .square {
     position: absolute;
-    right: 9rem;
-    top: 40rem;
+    right: 22rem;
+    top: 37rem;
   }
 
   .projects .projectDescriptionRight {
@@ -921,20 +947,19 @@ a.download:hover {
   }
   .circle {
     top: 18rem;
-    left: 19rem;
+    left: -6rem;
   }
   .square {
     position: absolute;
-    right: 8rem;
-    top: 12rem;
+    right: 16rem;
+    top: 8rem;
   }
-
   .triangle {
-    left: 20rem;
+    left: 1rem;
   }
-
   .cross {
-    display: none;
+    top: -5rem;
+    left: 6rem;
   }
   .aboutMainContainer figure {
     width: 19rem;
@@ -957,23 +982,21 @@ a.download:hover {
   .used li {
     margin: 0.5rem;
   }
-  h1 {
-    line-height: 14vh;
-  }
-  h2 {
-    font-size: 6vh;
+  .titleContainer {
+    h1 {
+      font-size: 11vh;
+      line-height: 14vh;
+    }
+    h2 {
+      font-size: 6vh;
+    }
+    .firstCoffee {
+      line-height: 5vh;
+      font-size: 6vh;
+    }
   }
 }
 @media (max-width: 355px) {
-  .circle {
-    display: none;
-  }
-  .triangle {
-    top: 12rem;
-  }
-  .square {
-    top: 12rem;
-  }
   .aboutMainContainer figure {
     width: 17rem;
   }
